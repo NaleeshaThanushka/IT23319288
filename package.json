@@ -1,0 +1,22 @@
+{
+  "name": "it3040-assignment1",
+  "version": "1.0.0",
+  "description": "Playwright automation for Singlish to Sinhala translator",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:positive": "playwright test --grep \"Pos_Fun\"",
+    "test:negative": "playwright test --grep \"Neg_Fun\"",
+    "test:ui": "playwright test --grep \"Pos_UI\"",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://www.swifttranslator.com"
+  },
+  "keywords": ["playwright", "testing", "translator", "sinhala"],
+  "author": "IT23319288",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}
